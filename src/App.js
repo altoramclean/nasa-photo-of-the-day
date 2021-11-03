@@ -16,9 +16,9 @@ function App() {
 
   return (
     <div className="App">
-      <p>
+      <h1>
         Welcome to the Nasa Photo of the Day!<span role="img" aria-label='go!'>🚀</span>
-      </p>
+      </h1>
       { nasaData && <NasaCard data={nasaData} /> }
     </div>
   );
