@@ -1,5 +1,10 @@
 import React from "react";
 import "./App.css";
+import React, {useEffect, useState} from "react";
+import axios from 'axios';
+import Image from './components/Image';
+import Explanation from './components/Explanation';
+import ExtraStuff from './components/extraStuff';
 
 function App() {
   return (
