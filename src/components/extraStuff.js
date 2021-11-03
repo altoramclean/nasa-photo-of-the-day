@@ -4,7 +4,7 @@ import React from 'react';
 const NasaCard = (props) => {
 return (
     <>
-    <h1> This is the Nasa Card!</h1>
+    <h2> This is the Nasa Card!</h2>
     <p>{props.data.date}</p>
     <p>{props.data.title}</p>
     <img src={props.data.url} alt="Nasa pic of the day"/>
