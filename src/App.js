@@ -3,22 +3,24 @@ import "./App.css";
 import axios from 'axios';
 import Title from './components/Title';
 import Img from './components/Image';
-import Explanation from './components/Explanation';
+import explanation from './components/Explanation';
 import ExtraStuff from './components/extraStuff';
 
 function App() {
-const [nasa, setNasa] = useState([])
+
+const [data, setData] = useState([]);
+
   useEffect(() => {
-    axios.get(`https://api.nasa.gov/planetary/apod?api_key=9AbzILPniiieYHA8MPMNrbmTk5y1jqh9t0svIYkq`)
+    axios.get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY`)
     .then(res => {
-      setNasa(res.data)
+      setData(res.data);
     })
     .catch(error => {
-      console.error(error)
+      console.error(error);
     })
 
-  },[])
-  console.log(nasa)
+  }, [])
+  console.log(data)
 
 
 
