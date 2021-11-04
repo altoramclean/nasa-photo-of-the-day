@@ -7,11 +7,15 @@ import styled from 'styled-components';
 
 
 const StyleHead = styled.h1`
-font-size: 1.5em;
+font-size: 1.8em;
 text-align: center;
-color: grey;
+color: #696969;
 `;
 
+const StyleBack = styled.div`
+background-color: #B8860B;
+border-radius: 40px;
+`;
 
 
   
@@ -27,13 +31,16 @@ function App() {
 
   return (
     <div className = 'App'> 
+    <StyleBack>
     <StyleHead>
       <h1>
-        Welcome to the Nasa Photo of the Day!<span role="img" aria-label='go!'>🚀</span>
+        Welcome to the Nasa Photo of the Day!<span role="img" aria-label='go!'>🚀🚀</span>
       </h1>
       </StyleHead>
+      </StyleBack>
       { nasaData && <NasaCard data={nasaData} /> }
       </div>
+    
   );
   
 }

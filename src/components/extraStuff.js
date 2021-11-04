@@ -4,33 +4,29 @@ import styled from 'styled-components';
 
 
 const StyleExtra = styled.h2`
-    font-size: 1.5em;
+    font-size: 1.6em;
     text-align:center;
-    color:darkblue;
+    color:black;
     `;
 
 const StyledP = styled.div`
+    font-size:1.4rem;
     text-align: center;
+    color:brown;
 `;
 
 const StyledP2 = styled.div`
-font-size: 1.2rem;
-text-align: center;
-color:grey;
+    font-size: 1.2rem;
+    text-align: center;
+    color:grey;
 `;
-
-
-
-
-
-
 
 
 
 const NasaCard = (props) => {
 return (
     <StyleExtra>
-    <h2> This is the Nasa Card!</h2>
+    <h2> This is the Nasa Card!<span role="img" aria-label='smiley face'>😬</span></h2>
 <StyledP> 
     <p>{props.data.date}</p>
     <p>{props.data.title}</p>
