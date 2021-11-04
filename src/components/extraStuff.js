@@ -12,13 +12,13 @@ const StyleExtra = styled.h2`
 const StyledP = styled.div`
     font-size:1.4rem;
     text-align: center;
-    color:brown;
+    color:#BC8F8F;
 `;
 
 const StyledP2 = styled.div`
     font-size: 1.2rem;
     text-align: center;
-    color:grey;
+    color:#A0522D;
 `;
 
 
