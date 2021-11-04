@@ -2,6 +2,17 @@ import React, {useState, useEffect} from "react";
 import "./App.css";
 import axios from 'axios';
 import NasaCard from './components/extraStuff.js';
+import styled from 'styled-components';
+
+
+
+const StyleHead = styled.h1`
+font-size: 1.5em;
+text-align: center;
+color: grey;
+`;
+
+
 
   
 function App() {
@@ -15,12 +26,16 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
+    <div className = 'App'> 
+    <StyleHead>
       <h1>
         Welcome to the Nasa Photo of the Day!<span role="img" aria-label='go!'>🚀</span>
       </h1>
+      </StyleHead>
       { nasaData && <NasaCard data={nasaData} /> }
-    </div>
+      </div>
   );
+  
 }
+
 export default App;
